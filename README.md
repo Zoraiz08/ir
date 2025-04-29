@@ -1,8 +1,8 @@
-#🚗 Robot Detector de Líneas con Sensores Infrarrojos (IR)
+# 🚗 Robot Detector de Líneas con Sensores Infrarrojos (IR)
 
 Este proyecto consiste en un robot controlado por Arduino que utiliza sensores infrarrojos (IR) para seguir una línea. Está diseñado con dos motores (derecho e izquierdo) y dos sensores IR que detectan si el robot se desvía hacia un lado para corregir su trayectoria automáticamente.
 
-##🔌 Esquema de Conexiones
+## 🔌 Esquema de Conexiones
 
 Componente	Pin Arduino
 Sensor IR Derecho	--> D6
@@ -14,14 +14,14 @@ Motor Izquierdo IN4	--> D10
 Activación Driver	--> D4
 Nota: Todos los pines de los motores están configurados como OUTPUT y los sensores IR como INPUT. El pin EEP activa el controlador de motores (HIGH para encenderlo).
 
-##⚙️ Funcionalidades
+## ⚙️ Funcionalidades
 El robot avanza si ambos sensores detectan línea.
 
 Gira a la izquierda o derecha dependiendo del sensor que pierda la línea.
 
 Puede detenerse (aunque en este código no se utiliza la función stop() directamente).
 
-##Consejos para Copiar el Código
+## Consejos para Copiar el Código
 
 Cambia los nombres de las variables y funciones. Por ejemplo, right() podría ser giraDerecha().
 
@@ -33,7 +33,7 @@ Cambia el orden de las funciones en el archivo, pero mantén la lógica igual.
 
 No copies el README tal cual (este es el mayor delator).
 
-##🛠️ Requisitos
+## 🛠️ Requisitos
 
 Arduino UNO
 
@@ -45,5 +45,5 @@ Módulo L298N o similar (Driver de motores)
 
 Fuente de alimentación externa para motores
 
-##🧠 Créditos
+## 🧠 Créditos
 Hecho con sudor, café y mucho código por [YO].
