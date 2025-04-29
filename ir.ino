@@ -1,5 +1,6 @@
 //SENSOR
-const int IR = 3;
+const int IR_D = 6;
+const int IR_E = 7;
 
 //MOTOR DRETA
 const int IN1 = 3;
@@ -21,15 +22,30 @@ pinMode(IN4, OUTPUT);
 pinMode(EEP, OUTPUT);
 
 //PIN DEL SENSOR --> ENTRADA
-pinMode(IR, INPUT);
-
+pinMode(IR_D, INPUT);
+pinMode(IR_E, INPUT);
 //DRIVER --> ON
 digitalWrite(EEP, HIGH);
 
 }
 
 void loop() {
+int VALOR_D = digitalRead(IR_D);
+int VALOR_E = digitalRead(IR_E);
 
+if (comparar(VALOR_D, VALOR_E) == "right"){
+  right();
+}else if (comparar(VALOR_D, VALOR_E) == "left"){
+  left();
+}else{
+  up();
+}
+
+char comparar(int VALOR_D,int VALOR_E){
+  if (VALOR_D == 1 || VALOR_E == 0){
+    return "right";
+  }else if (VALOR_D == 0 || VALOR_E == 1){
+    return "left";
 
 }
 
