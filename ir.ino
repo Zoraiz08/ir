@@ -41,7 +41,7 @@ if (comparar(VALOR_D, VALOR_E) == "right"){
   up();
 }
 
-char comparar(int VALOR_D,int VALOR_E){
+string comparar(int VALOR_D,int VALOR_E){
   if (VALOR_D == 1 || VALOR_E == 0){
     return "right";
   }else if (VALOR_D == 0 || VALOR_E == 1){
