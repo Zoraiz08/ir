@@ -87,9 +87,9 @@ if (comparar(VALOR_D, VALOR_E) == "r"){
   }
 }
 char comparar(int VALOR_D,int VALOR_E){
-  if (VALOR_D == 1 || VALOR_E == 0){
+  if (VALOR_D == 1 && VALOR_E == 0){
     return "r";
-  }else if (VALOR_D == 0 || VALOR_E == 1){
+  }else if (VALOR_D == 0 && VALOR_E == 1){
     return "l";
   }
 
